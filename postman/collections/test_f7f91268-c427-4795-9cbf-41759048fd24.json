@@ -14,7 +14,7 @@
 						"id": "7e36f6ea-aeee-4416-b2d1-5c04068d7e47",
 						"exec": [
 							"\r",
-							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");"
+							"pm.collectionVariables.set(\"set key\", \"variable_value\");"
 						],
 						"type": "text/javascript"
 					}
