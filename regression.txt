@@ -1,0 +1,61 @@
+Regression Testing
+
+Booking trades
+Hypo process
+BXC and BREDS groups
+
+Integration with vendor tool - BXC
+Breds use blotter as trade entry system
+
+as fund manager we do lot of trades for AIG
+HYPO trades-create hypo trades that wont actually take place
+to see pre trade compliance
+
+if we are buying a trade
+
+reporting 1 -biz team - getting allocation from client such as AIG
+hypo blotter gonna book allocation for AIG in blotter
+trade entry team who reports to trader
+trader completes trade
+
+select date
+enter issuer, trader, trader does not matter
+cat - secondary
+
+debt market - primary and secondary
+primary -
+
+workflow--
+trade date is today
+validation
+asset name, direction, qty, price, trade date all are in inline
+check in grid - based on allocation - check fund, custody-custodian, strategy-how we want to book trades-these have to be in line when we book the trade
+
+we dont actually care about counterparty
+
+check these and save the trade
+
+save - pre trade compliance
+push the trade - real compliance
+pushing - sending to accounting system
+
+Validations - error pop up -
+
+to fix
+edit trade - fix the things and save
+
+Once saved - push the trade
+loading to geneva after blue box pop up - successful push
+
+block trade - blackstone and jpmorgan
+
+once complete
+blackstone decides to allocate funds under this trade
+
+Trade entry > market trades
+
+counterparty - dummy gso test dealer - wheneer we want to sell the trades
+
+clearpar is the vendor system-trade/doc signing, trade allocation
+
+funds are decomissioned?????????
