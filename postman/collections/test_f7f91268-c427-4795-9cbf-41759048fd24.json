@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "69020918-7e99-43dc-bdeb-7e2f6e349aee",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Details about a user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7e36f6ea-aeee-4416-b2d1-5c04068d7e47",
+						"exec": [
+							"\r",
+							"pm.collectionVariables.set(\"variable_key\", \"variable_value\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "092b6afe-c767-4e75-bbb6-86f77c82e323",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://reqres.in/api/users",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3045c9d6-00a2-4c5a-8fdc-abd008ccbc43",
+					"name": "Details about a user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=-7368159",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-7368159"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"disabled": false,
+							"description": "A link to the next page of responses",
+							"key": "x-next",
+							"value": "reprehenderit ipsum tempor"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"id\": -38584633,\n  \"name\": \"ut in eiusmod in ve\",\n  \"tag\": \"commodo occaecat Excepteur\"\n}"
+				},
+				{
+					"id": "3ebde023-0bbc-409d-a69c-4eca04ea1835",
+					"name": "unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/user?id=-7368159",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-7368159"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"code\": -91804419,\n  \"message\": \"consectetur\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "db6742e4-b51b-4850-917a-8e44fb274e4b",
+			"key": "baseUrl",
+			"value": "https://reqres.in/api/users",
+			"type": "string"
+		}
+	]
+}
