@@ -1,11 +1,12 @@
   url: "https://reqres.in/api/users",
     type: "POST",
-    data: {
-        name: "paul rudd",
-        movies: ["I Love You Man", "Role Models"]
-    },
-    success: function(response){
-        console.log(response);
+    {
+    "data":{
+        "id":3,
+        "name":"true red",
+        "year":2002,
+        "pantone_value":"19-1664"
     }
-});
+}
+	
 	
